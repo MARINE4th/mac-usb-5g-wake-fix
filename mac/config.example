@@ -1,0 +1,9 @@
+# 复制为 ~/.usbnet/config 后按实际情况修改
+SERIAL=YOUR_DEVICE_SERIAL                     # adb devices -l 输出的第一列
+IF=en6                                        # networksetup -listallhardwareports 里通信壳对应的 Device
+ADB=/opt/homebrew/bin/adb                     # Intel Mac 一般是 /usr/local/bin/adb
+DEVICE_SCRIPT=/mnt/userdata/usbwd/rebind.sh   # 设备上 rebind.sh 的位置
+WEBUI=http://192.168.66.1                     # 设备网页后台地址（状态栏菜单用）
+WINDOW=10                                     # 唤醒或重连后，高速刷新持续的秒数
+FAST=0.1                                      # 高速刷新间隔（秒）
+SLOW=10                                       # 平时刷新间隔（秒）
