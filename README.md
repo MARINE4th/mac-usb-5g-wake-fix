@@ -173,9 +173,9 @@ networksetup -listallhardwareports      # 通信壳那一项的 Device 就是 IF
 ### 2. 运行安装脚本
 
 ```bash
-git clone <本仓库地址>
+git clone git clone https://github.com/MARINE4th/mac-usb-5g-wake-fix.git
 cd mac-usb-5g-wake-fix
-./install.sh
+bash install.sh
 ```
 
 它会做这些事：
@@ -255,7 +255,7 @@ Homebrew 的 sleepwatcher 服务默认在唤醒时执行 `~/.wakeup`、睡眠时
 brew install --cask swiftbar
 mkdir -p ~/SwiftBarPlugins
 open -a SwiftBar          # 首次打开时选 ~/SwiftBarPlugins 作为插件目录
-./install.sh ~/SwiftBarPlugins
+bash install.sh ~/SwiftBarPlugins
 ```
 
 或者手动复制：`install -m 755 swiftbar/usbnet.sh ~/SwiftBarPlugins/usbnet.sh`，然后运行 `killall SwiftBar; open -a SwiftBar` 重新加载。
